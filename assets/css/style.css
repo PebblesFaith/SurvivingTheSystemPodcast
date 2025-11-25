@@ -27,44 +27,86 @@ p {
 }
 
 /* ================================
-   HEADER + NAVIGATION
+   NEWSPAPER MASTHEAD HEADER
    ================================ */
 
 .site-header {
-    width: 100%;
     background-color: #ffffff;
-    border-bottom: 2px solid #ddd;
-    padding: 15px 0;
+    padding: 25px 20px 10px 20px;
+    border-bottom: 3px solid #222;
     text-align: center;
 }
 
-.logo-container {
-    margin-bottom: 10px;
-}
-
+/* LOGO */
 .site-logo {
-    width: 420px;
+    width: 380px;     /* Adjust this size as needed */
     height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
 }
 
-/* NAVIGATION */
+/* MASTHEAD TEXT */
+.masthead-title {
+    font-family: "Merriweather", serif;
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+    color: #111;
+}
 
+.masthead-subtitle {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+/* NAVIGATION BAR */
 .main-nav ul {
     list-style: none;
     display: inline-flex;
-    gap: 25px;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
 }
 
 .main-nav a {
-    text-decoration: none;
     color: #222;
+    text-decoration: none;
     font-weight: bold;
     font-size: 1rem;
+    position: relative;
 }
 
 .main-nav a:hover {
     color: #0056b3;
 }
+
+/* ================================
+   RESPONSIVE HEADER
+   ================================ */
+
+@media (max-width: 768px) {
+
+    .site-logo {
+        width: 240px;
+    }
+
+    .masthead-title {
+        font-size: 1.6rem;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 12px;
+        border-top: none;
+        padding-top: 10px;
+    }
+}
+
 
 /* ================================
    HERO SECTION
