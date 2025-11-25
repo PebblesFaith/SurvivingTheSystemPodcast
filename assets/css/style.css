@@ -31,18 +31,17 @@ p {
    FULL-WIDTH BANNER HEADER
 =============================================== */
 .banner-header {
-    top: 50px;   
+    margin-top: 50px;
     width: 100%;
-    height: 600px;  /* Balanced height for your PNG banner */
+    height: 600px;   /* Your chosen height */
     background-image: url("../images/surviving_the_system_banner.svg");
-    background-size: cover;      /* Stretches left+right edge-to-edge */
     background-repeat: no-repeat;
-    background-position: center;
+    background-size: contain;   /* IMPORTANT — keeps full image visible */
+    background-position: center top; 
+    background-color: #ffffff;  /* Fills the unused space */
     border-bottom: 3px solid #222;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
+
 
 
 .banner-subtitle {
