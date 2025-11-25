@@ -31,9 +31,9 @@ p {
    FULL-WIDTH BANNER HEADER
 =============================================== */
 .banner-header {
-    top: 25px;   
+    top: 50px;   
     width: 100%;
-    height: 325px;  /* Balanced height for your PNG banner */
+    height: 400px;  /* Balanced height for your PNG banner */
     background-image: url("../images/surviving_the_system_banner.svg");
     background-size: cover;      /* Stretches left+right edge-to-edge */
     background-repeat: no-repeat;
