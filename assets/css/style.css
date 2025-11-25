@@ -37,12 +37,21 @@ p {
     text-align: center;
 }
 
+/* CROPPED LOGO FIX */
+.logo-crop {
+    width: 380px;                /* adjust as needed */
+    height: 150px;               /* this controls the visible height */
+    overflow: hidden;            /* hides the top/bottom empty space */
+    margin: 0 auto;
+}
+
 /* LOGO */
 .site-logo {
-    width: 380px;     /* Adjust this size as needed */
+    width: 380px;                /* keep width the same */
     height: auto;
     display: block;
-    margin: 0 auto 10px auto;
+    transform: translateY(-120px); 
+    /* ^ adjust this negative value to move logo upward or downward */
 }
 
 /* MASTHEAD TEXT */
