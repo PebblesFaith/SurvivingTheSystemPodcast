@@ -44,11 +44,14 @@ p {
 
 
 
-.banner-subtitle {
-   justify-content: center;
-    font-size: 1.1rem;
+.banner-tagline {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
     color: #444;
 }
+
 
 /* ============================================
    NAVIGATION BAR
