@@ -1,6 +1,6 @@
-/* ============================================
+/* ===========================================================
    GLOBAL RESET & BASE STYLE
-=============================================== */
+============================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -9,134 +9,155 @@
 
 body {
     font-family: "Georgia", serif;
-    background-color: #E1E4D5; /* Soft Sage Background */
-    color: #3B3B3B;            /* Deep Charcoal Text */
+    background-color: #E1E4D5;  /* MAIN PAGE BACKGROUND */
+    color: #222222;
     line-height: 1.6;
 }
 
-/* ============================================
+/* ===========================================================
+   COLOR VARIABLES (for future scalability)
+============================================================== */
+:root {
+    --base-bg: #E1E4D5;
+    --panel-bg: #FFFFFF;
+    --soft-grey: #DADFD0;
+    --soft-grey-2: #C8CCBE;
+    --text-dark: #222;
+    --text-accent: #3A3D3A;
+}
+
+/* ===========================================================
    HEADINGS & TEXT
-=============================================== */
+============================================================== */
 h1, h2, h3 {
     font-family: "Merriweather", serif;
     font-weight: 700;
-    color: #3B3B3B;
     margin-bottom: 15px;
+    color: var(--text-dark);
 }
 
 p {
     margin-bottom: 15px;
-    color: #5A5A5A; /* Softer medium gray */
+    color: var(--text-accent);
 }
 
-/* ============================================
-   FULL-WIDTH BANNER HEADER
-=============================================== */
+/* ===========================================================
+   HEADER BANNER
+============================================================== */
 .banner-header {
     margin-top: 50px;
     width: 100%;
     height: 600px;
     background-image: url("../images/surviving_the_system_banner.svg");
     background-repeat: no-repeat;
-    background-size: cover;        
+    background-size: contain;
     background-position: center top;
-    background-color: #FFFFFF; 
-    border-bottom: 2px solid #DCDCDC;
+    background-color: #FFFFFF;
+    border-bottom: 3px solid var(--soft-grey-2);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 /* Tagline Under Banner */
 .tagline-container {
     width: 100%;
     text-align: center;
-    padding: 15px 0;
+    padding: 12px 0;
+    background: var(--soft-grey);
 }
 
 .banner-subtitle {
     font-family: "Merriweather", serif;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: 700;
-    color: #3B3B3B;
+    color: var(--text-accent);
     letter-spacing: 0.5px;
 }
 
-/* ============================================
+/* ===========================================================
    NAVIGATION BAR
-=============================================== */
+============================================================== */
 .main-nav {
     background: #FFFFFF;
-    border-bottom: 2px solid #DCDCDC;
+    border-bottom: 2px solid var(--soft-grey-2);
     padding: 15px 0;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
 }
 
 .main-nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 34px;
+    gap: 30px;
 }
 
 .main-nav a {
     text-decoration: none;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 1rem;
-    color: #3B3B3B;
-    padding-bottom: 5px;
-    border-bottom: 2px solid transparent;
+    color: var(--text-dark);
+    transition: 0.2s ease-in-out;
 }
 
 .main-nav a:hover {
-    border-bottom: 2px solid #A7A7A7; /* Soft hover underline */
+    color: var(--text-accent);
 }
 
-/* ============================================
-   HERO SECTION
-=============================================== */
+/* ===========================================================
+   HERO / TAGLINE
+============================================================== */
 .hero-section {
     text-align: center;
     background: #FFFFFF;
-    padding: 45px 20px;
-    border-bottom: 2px solid #DCDCDC;
+    padding: 40px 20px;
+    border-bottom: 2px solid var(--soft-grey);
 }
 
 .tagline {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     max-width: 720px;
     margin: 0 auto;
-    color: #3B3B3B;
+    color: var(--text-accent);
 }
 
-/* ============================================
-   MISSION STATEMENT
-=============================================== */
+/* ===========================================================
+   MISSION BLOCK
+============================================================== */
 .mission-section {
     max-width: 900px;
     margin: 50px auto;
     padding: 30px;
     background: #FFFFFF;
-    border-left: 5px solid #A7A7A7; 
-    box-shadow: 0px 2px 6px rgba(0,0,0,0.06);
+    border-left: 6px solid var(--soft-grey-2);
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.06);
 }
 
-/* ============================================
-   FEATURED MEDIA
-=============================================== */
+/* ===========================================================
+   FEATURED MEDIA BLOCK
+============================================================== */
 .featured-media {
     max-width: 900px;
     margin: 50px auto;
     padding: 30px;
     background: #FFFFFF;
-    border: 1px solid #DCDCDC;
-    box-shadow: 0px 2px 6px rgba(0,0,0,0.05);
+    border: 1px solid var(--soft-grey-2);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.06);
+}
+
+.featured-media h2 {
+    color: var(--text-dark);
 }
 
 .featured-video {
     width: 100%;
-    border: 2px solid #A7A7A7;
+    border: 3px solid var(--soft-grey-2);
+    border-radius: 4px;
 }
 
-/* ============================================
-   EPISODE PREVIEW CARDS
-=============================================== */
+/* ===========================================================
+   EPISODE CARDS
+============================================================== */
 .episodes-preview {
     max-width: 900px;
     margin: 50px auto;
@@ -146,30 +167,31 @@ p {
     background: #FFFFFF;
     padding: 25px;
     margin-bottom: 30px;
-    border: 1px solid #DCDCDC;
+    border: 1px solid var(--soft-grey-2);
+    border-left: 5px solid var(--soft-grey);
     box-shadow: 0px 2px 5px rgba(0,0,0,0.05);
 }
 
 .episode-card h3 {
-    color: #3B3B3B;
+    margin-bottom: 8px;
+    color: var(--text-dark);
 }
 
 .episode-link {
     font-weight: bold;
     text-decoration: none;
-    color: #3B3B3B;
+    color: var(--text-accent);
 }
 
 .episode-link:hover {
-    color: #777;
     text-decoration: underline;
 }
 
-/* ============================================
+/* ===========================================================
    FOOTER
-=============================================== */
+============================================================== */
 .site-footer {
-    background: #2B2B2B;  
+    background: #3A3D3A;
     color: #FFFFFF;
     text-align: center;
     padding: 40px 20px;
@@ -177,26 +199,23 @@ p {
     font-size: 0.95rem;
 }
 
-/* ============================================
-   RESPONSIVE BREAKPOINTS
-=============================================== */
+/* ===========================================================
+   RESPONSIVE OPTIMIZATION
+============================================================== */
 @media (max-width: 768px) {
 
     .banner-header {
-        height: 260px;
+        height: 140px;
     }
 
     .banner-subtitle {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
     .main-nav ul {
         flex-direction: column;
-        gap: 16px;
-    }
-
-    .hero-section {
-        padding: 30px 15px;
+        gap: 14px;
+        padding-bottom: 15px;
     }
 
     .tagline {
