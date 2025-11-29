@@ -50,14 +50,16 @@ p {
     height: 600px;
     background-image: url("../images/surviving_the_system_banner.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;     /* FIX */
     background-position: center top;
     background-color: #FFFFFF;
     border-bottom: 3px solid var(--soft-grey-2);
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    overflow: hidden;           /* FIX */
 }
+
 
 /* Tagline Under Banner */
 .tagline-container {
