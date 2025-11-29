@@ -193,15 +193,13 @@ p {
    FOOTER
 ============================================================== */
 .site-footer {
-    background: #3A3D3A;
-    color: #FFFFFF;
     text-align: center;
     padding: 40px 20px;
     margin-top: 60px;
+    background-color: #222;
+    color: #fff;
     font-size: 0.95rem;
 }
-
-
 
 /* ===========================================================
    RESPONSIVE OPTIMIZATION
