@@ -9,8 +9,8 @@
 
 body {
     font-family: "Georgia", serif;
-    background-color: #f4f4f4;
-    color: #222;
+    background-color: #E1E4D5; /* Soft Sage Background */
+    color: #3B3B3B;            /* Deep Charcoal Text */
     line-height: 1.6;
 }
 
@@ -20,11 +20,13 @@ body {
 h1, h2, h3 {
     font-family: "Merriweather", serif;
     font-weight: 700;
+    color: #3B3B3B;
     margin-bottom: 15px;
 }
 
 p {
     margin-bottom: 15px;
+    color: #5A5A5A; /* Softer medium gray */
 }
 
 /* ============================================
@@ -33,43 +35,36 @@ p {
 .banner-header {
     margin-top: 50px;
     width: 100%;
-    height: 600px;   /* Your chosen height */
+    height: 600px;
     background-image: url("../images/surviving_the_system_banner.svg");
     background-repeat: no-repeat;
-    background-size: contain;   /* IMPORTANT — keeps full image visible */
-    background-position: center top; 
-    background-color: #ffffff;  /* Fills the unused space */
-    border-bottom: 3px solid #222;
+    background-size: cover;        
+    background-position: center top;
+    background-color: #FFFFFF; 
+    border-bottom: 2px solid #DCDCDC;
 }
-
-
 
 /* Tagline Under Banner */
 .tagline-container {
     width: 100%;
     text-align: center;
     padding: 15px 0;
-    margin-top: -10px; /* adjust if needed */
 }
 
 .banner-subtitle {
     font-family: "Merriweather", serif;
-    font-size: 1.2rem;
-    font-weight: 700;      /* makes it bold */
-    color: #333;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #3B3B3B;
     letter-spacing: 0.5px;
-    text-align: center;    /* ensures alignment */
-    margin: 0 auto;
 }
-
-
 
 /* ============================================
    NAVIGATION BAR
 =============================================== */
 .main-nav {
-    background: #ffffff;
-    border-bottom: 2px solid #ccc;
+    background: #FFFFFF;
+    border-bottom: 2px solid #DCDCDC;
     padding: 15px 0;
 }
 
@@ -77,36 +72,37 @@ p {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 28px;
+    gap: 34px;
 }
 
 .main-nav a {
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1rem;
-    color: #222;
-    position: relative;
+    color: #3B3B3B;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
 }
 
 .main-nav a:hover {
-    color: #0056b3;
+    border-bottom: 2px solid #A7A7A7; /* Soft hover underline */
 }
 
 /* ============================================
-   TAGLINE SECTION
+   HERO SECTION
 =============================================== */
 .hero-section {
     text-align: center;
-    background: #ffffff;
-    padding: 40px 20px;
-    border-bottom: 2px solid #ddd;
+    background: #FFFFFF;
+    padding: 45px 20px;
+    border-bottom: 2px solid #DCDCDC;
 }
 
 .tagline {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     max-width: 720px;
     margin: 0 auto;
-    color: #333;
+    color: #3B3B3B;
 }
 
 /* ============================================
@@ -116,9 +112,9 @@ p {
     max-width: 900px;
     margin: 50px auto;
     padding: 30px;
-    background: #ffffff;
-    border-left: 5px solid #222;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.06);
+    background: #FFFFFF;
+    border-left: 5px solid #A7A7A7; 
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.06);
 }
 
 /* ============================================
@@ -128,14 +124,14 @@ p {
     max-width: 900px;
     margin: 50px auto;
     padding: 30px;
-    background: #ffffff;
-    border: 1px solid #ccc;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.06);
+    background: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.05);
 }
 
 .featured-video {
     width: 100%;
-    border: 2px solid #222;
+    border: 2px solid #A7A7A7;
 }
 
 /* ============================================
@@ -147,25 +143,25 @@ p {
 }
 
 .episode-card {
-    background: #ffffff;
+    background: #FFFFFF;
     padding: 25px;
     margin-bottom: 30px;
-    border: 1px solid #ddd;
+    border: 1px solid #DCDCDC;
     box-shadow: 0px 2px 5px rgba(0,0,0,0.05);
 }
 
 .episode-card h3 {
-    margin-bottom: 10px;
-    color: #111;
+    color: #3B3B3B;
 }
 
 .episode-link {
     font-weight: bold;
     text-decoration: none;
-    color: #0056b3;
+    color: #3B3B3B;
 }
 
 .episode-link:hover {
+    color: #777;
     text-decoration: underline;
 }
 
@@ -173,8 +169,8 @@ p {
    FOOTER
 =============================================== */
 .site-footer {
-    background: #222;
-    color: #fff;
+    background: #2B2B2B;  
+    color: #FFFFFF;
     text-align: center;
     padding: 40px 20px;
     margin-top: 60px;
@@ -187,20 +183,16 @@ p {
 @media (max-width: 768px) {
 
     .banner-header {
-        height: 130px;
-    }
-
-    .banner-title {
-        font-size: 1.6rem;
+        height: 260px;
     }
 
     .banner-subtitle {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .main-nav ul {
         flex-direction: column;
-        gap: 12px;
+        gap: 16px;
     }
 
     .hero-section {
@@ -208,6 +200,6 @@ p {
     }
 
     .tagline {
-        font-size: 1.05rem;
+        font-size: 1.1rem;
     }
 }
