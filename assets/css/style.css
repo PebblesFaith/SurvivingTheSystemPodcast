@@ -193,13 +193,14 @@ p {
    FOOTER
 ============================================================== */
 .site-footer {
-    background-color: #FFFFFF !important;
-    color: #3A3D3A !important;
-    position: relative;
-    z-index: 10;
+    background: #3A3D3A;
+    color: #FFFFFF;
     text-align: center;
-    font-size: 16px;
+    padding: 40px 20px;
+    margin-top: 60px;
+    font-size: 0.95rem;
 }
+
 
 
 /* ===========================================================
