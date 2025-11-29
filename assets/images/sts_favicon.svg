@@ -1,0 +1,12 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="256" cy="256" r="256" fill="#3A3D3A"/>
+
+  <!-- Microphone Icon -->
+  <g fill="#E1E4D5">
+    <rect x="210" y="120" width="92" height="200" rx="46"/>
+    <path d="M160 240c0 79 57 120 96 120s96-41 96-120h-32c0 60-37 88-64 88s-64-28-64-88h-32z"/>
+    <rect x="240" y="360" width="32" height="70" />
+    <rect x="200" y="430" width="112" height="20" rx="10"/>
+  </g>
+</svg>
